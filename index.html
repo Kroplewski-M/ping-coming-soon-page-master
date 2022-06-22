@@ -6,6 +6,7 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <script src="https://cdn.tailwindcss.com"></script>
+  <script src="script.js" defer></script>
   <title>Frontend Mentor | Ping coming soon page</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -16,35 +17,29 @@
 </head>
 <body>
   <div class="grid">
-      <div class="border-solid border-2 border-black w-[100vw] h-auto text-center">
+      <div class="w-[100vw] h-auto text-center">
           <div class="">
-              <img src="./images/logo.svg" alt="" class="mx-auto w-[15%] h-[15%] mt-[50px]">
-              <p class="text-gray-400 text-[18px] mt-[20px]">We are launching <span class="text-black font-bold"> soon! </span></p>
-              <p class="text-[11px] mt-[10px]">Subscribe and get notified</p>
+              <img src="./images/logo.svg" alt="" class="mx-auto w-[15%] md:w-[5%]  mt-[50px]">
+              <p class="text-gray-400 text-[18px] md:text-[45px] mt-[20px]">We are launching <span class="text-black font-bold"> soon! </span></p>
+              <p class="text-[11px] mt-[10px] md:text-[20px]">Subscribe and get notified</p>
 
               <form action="">
-                <input type="text" name="email" id="email" placeholder="Your email address..." class="rounded-full w-[250px] h-[30px] mt-5 border-solid border-[1px] border-gray-300 pl-[10px] text-[12px]">
-                <button class="bg-blue-600 text-white shadow-lg mt-[10px] rounded-full w-[250px] h-[30px]">Notify Me</button>
+                <input type="text" name="email" id="email" placeholder="Your email address..." class="rounded-full w-[250px] md:h-[40px] h-[30px] mt-5 border-solid border-[1px] border-gray-300 pl-[10px] text-[12px]">
+                <p class="text-[10px] text-red-300 md:absolute md:left-[41%] mt-[10px] hidden" id="error">Please provide a valid email address</p>
+                <button class="bg-blue-600 text-white shadow-lg mt-[10px] rounded-full w-[250px] md:w-[170px] md:h-[40px] h-[30px]" id="submit">Notify Me</button>
               </form>
 
-              <img src="./images/illustration-dashboard.png" alt="" class="mt-[70px] w-[90%] mx-auto">
+              <img src="./images/illustration-dashboard.png" alt="" class="mt-[70px] w-[90%] md:w-[40%] mx-auto">
 
-              <div class="flex space-x-[10px] mb-10 mt-[70px] ml-[30vw]">
+              <div class="flex space-x-[10px] mb-10 mt-[70px] ml-[33vw] md:ml-[47vw]">
                 <img src="./images/facebook.svg" alt="" class="w-[30px] border-solid border-[1px] border-gray-300 p-[5px] rounded-full">
                 <img src="./images/twitter.svg" alt="" class="w-[30px] border-solid border-[1px] border-gray-300 p-[5px] rounded-full">
                 <img src="./images/instagram.svg" alt="" class="w-[30px] border-solid border-[1px] border-gray-300 p-[5px] rounded-full">
               </div>
-
+              <p class="text-gray-300 mt-[8px] text-[10px]">&copy; Copyright Ping. All rights reserved.</p>
           </div>
       </div>
   </div>
-  
-
-
-  Notify Me
-
-  &copy; Copyright Ping. All rights reserved.
-
   <footer>
     <p class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
